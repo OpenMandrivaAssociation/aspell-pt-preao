@@ -1,22 +1,23 @@
 %define _enable_debug_packages %{nil}
 %define debug_package          %{nil}
 
-%define langglazy Portuguese
-%define langcode pt-preao
-%define lc_ctype pt_PT-preao
 %define intname aspell6
-%define intver 20110410-0
+%define intver 20110424
+
+%define languageenglaz Portuguese
+%define languagecode pt-preao
+%define lc_ctype pt_PT-preao
 
 
-Summary:	%{langglazy} files previous to 1990 orthography agreement for aspell
-Name:		aspell-%{langcode}
+Summary:	%{languageglazy} files previous to 1990 orthography agreement for aspell
+Name:		aspell-%{languagecode}
 Version:	0.60.0
 Release:	%mkrel 1
 Group:		System/Internationalization
 License:	GPL
 URL:		http://aspell.sourceforge.net/
 # http://ftp.gnu.org/gnu/aspell/dict/%{languagecode}/aspell-%{languagecode}-%{src_ver}.tar.bz2
-Source0:	http://natura.di.uminho.pt/download/sources/Dictionaries/aspell6/LATEST/%{intname}.%{langcode}-latest.tar.bz2
+Source0:	http://natura.di.uminho.pt/download/sources/Dictionaries/aspell6/%{intname}.%{languagecode}-%{intver}.tar.bz2
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	aspell >= 0.60
 BuildRequires:	make
@@ -28,7 +29,7 @@ Provides:	enchant-dictionary = 1
 Provides:	aspell-dictionary
 Provides:	aspell-%{lc_ctype}
 Provides:	%{intname}-%{lc_ctype}
-Provides:	%{intname}-%{langcode}
+Provides:	%{intname}-%{languagecode}
 Obsoletes:	ispell-pt
 Provides:	ispell-pt
 
@@ -54,7 +55,7 @@ rm -fr %buildroot
 
 %files
 %defattr(-,root,root)
-%doc README Copyright COPYING
+%doc README Copyright COPYING doc/LEIAME-preao.txt
 %{_libdir}/aspell-0.60
 
 
