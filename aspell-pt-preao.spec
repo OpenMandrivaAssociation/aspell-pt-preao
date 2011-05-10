@@ -39,7 +39,7 @@ to use with aspell, a spelling checker.
 Version %{intver}.
 
 %prep
-%setup -qn %{intname}-%{lc_ctype}-%{intver}
+%setup -qn %{intname}-%{lc_ctype}-%{intver}-0
 
 %build
 # don't use configure macro
