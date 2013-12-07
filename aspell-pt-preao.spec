@@ -12,7 +12,7 @@
 Summary:	%{languageglazy} files previous to 1990 orthography agreement for aspell
 Name:		aspell-%{languagecode}
 Version:	0.60.0
-Release:	7
+Release:	8
 Group:		System/Internationalization
 License:	GPL
 URL:		http://aspell.sourceforge.net/
