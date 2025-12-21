@@ -18,6 +18,10 @@ License:	GPL
 URL:		https://aspell.sourceforge.net/
 # http://ftp.gnu.org/gnu/aspell/dict/%{languagecode}/aspell-%{languagecode}-%{src_ver}.tar.bz2
 Source0:	http://natura.di.uminho.pt/download/sources/Dictionaries/aspell6/%{intname}.%{languagecode}-%{intver}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	aspell >= 0.60
 BuildRequires:	make
 Requires:	aspell >= 0.60
