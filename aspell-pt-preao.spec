@@ -11,8 +11,8 @@
 
 Summary:	%{languageglazy} files previous to 1990 orthography agreement for aspell
 Name:		aspell-%{languagecode}
-Version:	0.60.0
-Release:	15
+Version:	20110424
+Release:	1
 Group:		System/Internationalization
 License:	GPL
 URL:		https://aspell.sourceforge.net/
